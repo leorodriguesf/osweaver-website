@@ -57,10 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.removeChild(textArea);
   }
 
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.key === "c") {
-      e.preventDefault();
-      copyButton.click();
-    }
+  document.addEventListener("copy", (e) => {
+    e.preventDefault();
+    copyButton.click();
   });
 });

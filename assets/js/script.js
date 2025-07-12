@@ -56,9 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.body.removeChild(textArea);
   }
-
-  document.addEventListener("copy", (e) => {
-    e.preventDefault();
-    copyButton.click();
-  });
 });

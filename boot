@@ -83,7 +83,17 @@ esac
 
 echo "$OS dependencies installed"
 
-echo "Cloning repository..."
+echo "Cloning dotfiles..."
+
+rm -rf ~/.local/share/dotfiles
+
+git clone https://github.com/leorodriguesf/dotfiles.git ~/.local/share/dotfiles >/dev/null
+
+cd ~/.local/share/dotfiles
+
+./install
+
+echo "Cloning setup-my-computer..."
 
 rm -rf ~/.local/share/setup-my-computer
 

@@ -89,4 +89,6 @@ rm -rf ~/.local/share/setup-my-computer
 
 git clone https://github.com/leorodriguesf/setup-my-computer.git ~/.local/share/setup-my-computer >/dev/null
 
-source ~/.local/share/setup-my-computer/install
+cd ~/.local/share/setup-my-computer
+
+./install

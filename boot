@@ -34,10 +34,6 @@ Linux)
     ;;
 esac
 
-echo -e "=> $OS detected\n"
-
-echo "Installing $OS dependencies"
-
 case "$OS" in
 macos) 
     # Keep sudo alive
@@ -80,8 +76,6 @@ ubuntu)
     exit 1
     ;;
 esac
-
-echo "$OS dependencies installed"
 
 echo "Cloning dotfiles..."
 
